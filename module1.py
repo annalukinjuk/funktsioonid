@@ -7,7 +7,7 @@ def arithmetic(a: float,b:float,c:str):
     :param float a: Esimene arv
     :param float b: Teine arv
     :param str c: Aritmeetiline tehing
-    :rtype float:
+    :rtype var: Märamata tüüb
     """
     if c=="+":
         r=a+b
@@ -20,10 +20,9 @@ def arithmetic(a: float,b:float,c:str):
             r=a/b
         else:
             print("Div0")
-            r=0.0
+            r="Div/0"
     else:
-        print("viga")
-        r=0.0
+        r="tundmatu sym"
     return r
 
 def is_year_leap(aasta: int):
@@ -37,3 +36,5 @@ def is_year_leap(aasta: int):
     else:
         vastus=False
     return vastus
+
+def 
