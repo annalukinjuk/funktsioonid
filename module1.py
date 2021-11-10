@@ -20,6 +20,8 @@ def arithmetic(a: float,b:float,c:str):
             r=a/b
         else:
             print("Div0")
+            r=0.0
     else:
         print("viga")
+        r=0.0
     return r

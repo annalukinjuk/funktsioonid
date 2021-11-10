@@ -1,25 +1,10 @@
-def arithmetic(a: float,b:float,c:str):
-    """Lihtne kalkulaato
-    + - liitmine
-    - - lahutamine
-    * - korrutamine
-    / - jagamine
-    :param float a: Esimene arv
-    :param float b: Teine arv
-    :param str c: Aritmeetiline tehing
-    :rtype float:
-    """
-    if c=="+":
-        r=a+b
-    elif c=="-":
-        r=a-b
-    elif c=="*":
-        r=a*b
-    elif c=="/":
-        if b!=0:
-            r=a/b
-        else:
-            print("Div0")
-    else:
-        print("viga")
-    return r
+from module1 import*
+while True:
+    print("funktsioonid",center (50, "+"))
+    v=input("arithmetic- A")
+    if v.upper()=="A":
+        arv1=float(input("Arv 1ˇ:"))
+        arv2=float(input("Arv 2ˇ:"))
+        sym=input("tehe:")
+        rezult=aritmethic*(arv1,arv2,sym)
+        print(rezult)
