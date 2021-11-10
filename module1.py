@@ -25,3 +25,15 @@ def arithmetic(a: float,b:float,c:str):
         print("viga")
         r=0.0
     return r
+
+def is_year_leap(aasta: int):
+    """Liigaasta leidmine
+    Tagastab true kui aasta on liigaasta ja false kui ei ole 
+    :param int aasta: Aastanumber
+    :rtype bool: Funktsiooni vastus logilises formaadis
+    """
+    if aasta%4==0:
+        vastus=True
+    else:
+        vastus=False
+    return vastus
