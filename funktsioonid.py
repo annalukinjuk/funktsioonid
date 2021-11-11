@@ -18,4 +18,4 @@ while True:
         rezult=season(int(input("what month would you like to check?  ")))
         print(rezult)
     if v.upper()=="P":
-        rezult=
+        rezult=u
