@@ -1,4 +1,7 @@
 from module1 import*
+from datetime import*
+from cmath import sqrt
+
 while True:
     print("funktsioonid".center(50, "+"))
     v=input("arithmetic- A, is year leap - Y, check month season - C ")
@@ -15,3 +18,4 @@ while True:
         rezult=season(int(input("what month would you like to check?  ")))
         print(rezult)
     if v.upper()=="P":
+        rezult=

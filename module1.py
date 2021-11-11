@@ -65,3 +65,14 @@ from cmath import sqrt
 
 #n = int(input("siseta number  "))
 #print(prime(n))
+
+import datetime
+d=int(input("Введите день"))# предположим - 29
+m=int(input("Введите месяц"))# предположим - 2
+y=int(input("Введите год"))# предположим - 2020
+try:
+    data=datetime.date(y,m,d)
+    print(data)
+    print("Дата существующая")
+except:
+    print("Такой даты нет")
