@@ -37,4 +37,31 @@ def is_year_leap(aasta: int):
         vastus=False
     return vastus
 
-def 
+def season(seasondate: int):
+   if seasondate==12 or 1<= seasondate <=2:
+       print("winter")
+   elif  3<= seasondate <=5:
+       print("spring")
+   elif 6<= seasondate <=8:
+       print("summer")
+   elif 9<= seasondate <=11:
+       print("autunm")
+   else:
+       print("wrong number")
+   return seasondate
+
+from cmath import sqrt
+
+
+#def prime(number):
+#    if number %2==0 and number !=2:
+#        return False
+#    if number==0 or number==1:
+#        return False
+#    for n in range(3,int(sqrt(number).real) +1,2):
+#        if number %n==0:
+#            return False
+#    return True
+
+#n = int(input("siseta number  "))
+#print(prime(n))
