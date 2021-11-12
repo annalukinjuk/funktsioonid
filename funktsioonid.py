@@ -4,7 +4,7 @@ from cmath import sqrt
 
 while True:
     print("funktsioonid".center(50, "+"))
-    v=input("arithmetic- A, is year leap - Y, check month season - C, is number prime - P, XOR - X  ")
+    v=input("arithmetic- A, is year leap - Y, check month season - C, is number prime - P, XOR - X, calculate square features - K,   ")
     if v.upper()=="A":
         arv1=float(input("Arv 1ˇ:"))
         arv2=float(input("Arv 2ˇ:"))
@@ -14,11 +14,15 @@ while True:
     elif v.upper()=="Y":
         rezult=is_year_leap(int(input("siseta aasta: ")))
         print(rezult)
+    elif v.upper()=="K":
+        rezult=square(int(input("siseta squaere külk: ")))
+        print(rezult)
+        print("1 - ümbermõõt, 2 - pindala, 3 - diagonaal")
     elif v.upper()=="C":
         rezult=season(int(input("what month would you like to check?  ")))
         print(rezult)
     elif v.upper()=="P": 
-        rezult=is_prime(int(input("siseta number  ")))
+        rezult=is_prime(int(input("Is it true this number is prime? number:   ")))
         print(rezult)
     elif v.upper()=="X":
         rezult=xor_cipher(input("siseta text"),input("siseta võti:"))
