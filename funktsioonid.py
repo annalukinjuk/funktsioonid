@@ -36,5 +36,5 @@ while True:
         print(rezult)
         print("bank account has  ",rezult, " euros" )
     elif v.upper()=="D": 
-        rezult=date(int(input("  ")))
+        rezult=date(int(input("what date you want to check:  ")))
         print(rezult)

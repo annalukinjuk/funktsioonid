@@ -81,7 +81,7 @@ def is_prime(number: int):
             return False
     return True
 
-def bank(a:float,years:int):
+def bank(a:float, years:int):
     """Banki raha ja aasta leidimine
     Tagastab raha tulevad banki
     :param int money: money that customer put to bank acc
@@ -99,15 +99,13 @@ def date(day: int, month: int, year: int):
     :param int data: number
     :rtype bool: Funktsiooni vastus logilises formaadis
     """
-    month={1: 31,2: 28, 3: 31,4: 30,5: 31,6: 30,7: 31,8: 31,9: 30,10: 31,11: 30,12: 31}
+    def date(day:int, month:int, year:int):
+      set_months = {1: 31,2: 28, 3: 31,4: 30,5: 31,6: 30,7: 31,8: 31,9: 30,10: 31,11: 30,12: 31}
     if year>0 and (month>=1 and month<=12):
         if day in range(1, set_months[month]+1):
            return True
         else:
             return False
-    else:
-        return False
-
 def xor_cipher(string: str, key:str)->str:
     """Tavaline sõna kodeeritakse
     """
