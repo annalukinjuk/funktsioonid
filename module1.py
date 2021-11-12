@@ -69,9 +69,9 @@ def is_prime(number: int):
     :rtype bool: Funktsiooni vastus logilises formaadis
     """
     b=2
-    while a%b!=0:
+    while number%b!=0:
         b+=1
-    return b==a
+    return b==number
     if number %2==0 and number !=2:
         return False
     if number==0 or number==1:
@@ -82,24 +82,21 @@ def is_prime(number: int):
     return True
 
 def bank(a:float,years:int):
-    """Paneme raha saldole ja ootame n arv aastaid
+    """Banki raha ja aasta leidimine
+    Tagastab raha tulevad banki
+    :param int money: money that customer put to bank acc
+    :param float: how many aastat
+    :rtype var: money sum
     """
-    for _ in range(years):
-        a=((1.1*1/100)*a)*100
-    print("Ваш баланс:",a)
-    return("")
-def is_prime(a:int):
-    """Kirjutame arvu vahemikus 0 kuni 1000 ja tagastame tõene, kui see on lihtne, ja Väär muul juhul.
-    """
-    b=2
-    while a%b!=0:
-        b+=1
-    return b==a
+    for y in range(1,yrs+1):
+        percentcalc=money1*0.10
+        mnysum=money1+percentcalc
+    return mnysum
 
 def date(day: int, month: int, year: int):
     """Leidimine kui date exists või see on vale data number
     Tagastab true kui data number on meie kalendris false kui ei ole
-    :param int number: number
+    :param int data: number
     :rtype bool: Funktsiooni vastus logilises formaadis
     """
     month={1: 31,2: 28, 3: 31,4: 30,5: 31,6: 30,7: 31,8: 31,9: 30,10: 31,11: 30,12: 31}

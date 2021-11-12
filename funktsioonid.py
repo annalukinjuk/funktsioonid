@@ -4,7 +4,7 @@ from cmath import sqrt
 
 while True:
     print("funktsioonid".center(50, "+"))
-    v=input("arithmetic- A, is year leap - Y, check month season - C, is number prime - P, XOR - X, calculate square features - K,   ")
+    v=input("arithmetic- A, is year leap - Y, check month season - C, is number prime - P, XOR - X, calculate square features - K, how much money you have - B, is data correct -  D  ")
     if v.upper()=="A":
         arv1=float(input("Arv 1ˇ:"))
         arv2=float(input("Arv 2ˇ:"))
@@ -29,3 +29,12 @@ while True:
         print(rezult)
         de_rezult=xor_uncipher(rezult, input("siseta võti:"))
         print(de_rezult)
+    elif v.upper()=="B": 
+        money=int(input("money put to bank(vklad) : "))
+        yrs=float(input("how many years : "))
+        rezult=bank(mnysum)
+        print(rezult)
+        print("bank account has  ",rezult, " euros" )
+    elif v.upper()=="D": 
+        rezult=date(int(input("  ")))
+        print(rezult)
